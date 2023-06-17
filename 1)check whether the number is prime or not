@@ -1,0 +1,20 @@
+Q)CHECK WHETHER THE GIVEN NUMBER IS PRIME OR NOT 
+SOLN -#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    
+    cin>>n;
+
+    bool divided = false;
+    for(int i = 2 ;i < n;i++){
+        if(n % i == 0){
+            divided = true;
+        };
+    };
+      if(divided){
+          cout << "given number is not prime" << endl;
+         } else {
+              cout << "given number is prime " << endl;
+          };
+      };
